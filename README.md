@@ -119,7 +119,7 @@ Diabetes_Prediction/
 ### Clone Repository
 
 ```bash
-git clone <https://github.com/SudhanshuRajYadav/Diabetes-prediction>
+git clone https://github.com/SudhanshuRajYadav/Diabetes-prediction-.git
 ```
 
 ### Navigate to Project Folder
