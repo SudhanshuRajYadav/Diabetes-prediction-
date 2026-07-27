@@ -34,7 +34,7 @@ def diabetes_prediction(input_data):
   input_data_reshaped=input_data_as_numpy_array.reshape(1,-1)
 
   # standardize the input data
-  # std_data=scaler.transform(input_data_reshaped)
+  std_data=scaler.transform(input_data_reshaped)
   # print(std_data)
 
   prediction = loaded_model.predict(input_data_reshaped)
