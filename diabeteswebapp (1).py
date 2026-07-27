@@ -6,7 +6,18 @@ import pickle
 import streamlit as st
 
 # loading the saved model and scaler
-loaded_model=pickle.load(open("trained_model.sav","rb"))
+# loaded_model=pickle.load(open("trained_model.sav","rb"))
+from pathlib import Path
+import pickle
+
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "trained_model.sav"
+
+print("Model path:", MODEL_PATH)
+print("Exists:", MODEL_PATH.exists())
+
+with open(MODEL_PATH, "rb") as file:
+    loaded_model = pickle.load(file)
 loaded_scaler=pickle.load(open("scaler.sav","rb"))
 
 
