@@ -1,13 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from streamlit_jupyter import StreamlitPatcher
 import numpy as np
 import pickle
 import streamlit as st
-# patch the notebook
-StreamlitPatcher().jupyter()
-
 
 # loading the saved model and scaler
 loaded_model=pickle.load(open("D:/New folder/trained_model.sav","rb"))
