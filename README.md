@@ -131,7 +131,11 @@ cd Diabetes_Prediction
 ### Install Required Libraries
 
 ```bash
-pip install -r requirements.txt
+pip install -r
+streamlit
+pandas
+numpy
+scikit-learn
 ```
 
 ### Run Streamlit Application
